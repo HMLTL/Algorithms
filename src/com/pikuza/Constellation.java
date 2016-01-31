@@ -11,7 +11,7 @@ public class Constellation {
 
     public Constellation(){
         Utils utils = new Utils();
-        galaxy = utils.randomArrInitializer(0, 1, 20, 20);
+        galaxy = utils.rand2dIntArrInit(0, 1, 20, 20);
     }
 
     public Constellation(int[][] galaxy){
