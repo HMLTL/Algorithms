@@ -27,4 +27,16 @@ public class Utils {
         return randomArrInitializer(randomWithRange(0, 100), randomWithRange(0, 100));
     }
 
+    public static class TimeCounter{
+        long startTime;
+        long estimatedTime;
+
+        public void start(){ startTime = System.nanoTime(); }
+
+        public void stop(){ estimatedTime = System.nanoTime() - startTime; }
+
+        public String getEstimateTime(){ return  String.format("Estimated time is %f sec",(double) estimatedTime / 1000000000.0);}
+
+    }
+
 }
