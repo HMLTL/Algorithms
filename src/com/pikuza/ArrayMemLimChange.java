@@ -4,10 +4,10 @@ package com.pikuza;
  * Created by m.pikuza on 30.01.2016.
  */
 public class ArrayMemLimChange {
-    int[] array;
-    int firstPos;
-    int secPos;
-    int arrSize;
+    private int[] array;
+    private int firstPos;
+    private int secPos;
+    private int arrSize;
 
     public ArrayMemLimChange(){
         arrSize = 10;
@@ -42,12 +42,8 @@ public class ArrayMemLimChange {
         array[firstPos] -= array[secPos];
     }
 
-    public void showElBeforeChange(){
-        System.out.println("Before: " + array[firstPos] + ", " + array[secPos]);
-    }
-
-    public void showElAfterChange(){
-        System.out.println("After: " + array[firstPos] + ", " + array[secPos]);
+    public void showElments(){
+        System.out.println("Elements: " + array[firstPos] + ", " + array[secPos]);
     }
 
 }
