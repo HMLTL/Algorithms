@@ -1,14 +1,20 @@
 package com.pikuza;
 
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args) {
-        Constellation constellation = new Constellation();
-        System.out.println("Galaxy...");
-        constellation.printGalaxy();
-        System.out.println("\nConstellations quantity is: " + constellation.getConstellationsQuantity());
-        System.out.println("\nMarked constellations in the Galaxy...");
-        constellation.printGalaxy();
+    public static void main(String[] args)   {
+        Scanner in = new Scanner(System.in);
+        PrintWriter out = new PrintWriter(System.out);
 
+        int a = in.nextInt();
+        int b,c;
+
+        b=a/10; c=a%10;
+        out.println(b +" " + c);
+
+        out.flush();
     }
 }
